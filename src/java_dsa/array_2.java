@@ -6,7 +6,8 @@ import java.util.Scanner;
 
     class  Array{
         Scanner n =new Scanner(System.in);
-        int arr1 []=new int[5];
+        int size=n.nextInt();
+        int arr1 []=new int[size];
         public void arrayInput(){
             for(int i=0;i<arr1.length;i++){
                 arr1[i]=n.nextInt();
@@ -20,8 +21,11 @@ import java.util.Scanner;
             }
         }
 
-        public void changArray(){
-            for()
+        public void shiftArray(int n){
+            for(int  i= arr1.length;i>=n;i++){
+                    arr1[i+1]=arr1[i];
+
+            }
 
         }
     }
