@@ -22,11 +22,16 @@ import java.util.Scanner;
         }
 
         public void shiftArray(int n){
-            for(int  i= arr1.length;i>=n;i++){
-                    arr1[i+1]=arr1[i];
 
+            for(int  i=size;i>=n;i++){
+                    arr1[i+1]=arr1[i];
+                size++;
             }
 
+        }
+
+        public void insertAt(int m){
+            arr1[m]=n.nextInt();
         }
     }
 
@@ -37,6 +42,9 @@ import java.util.Scanner;
             Scanner n =new Scanner(System.in);
             Array m=new Array();
             m.arrayInput();
+            m.printArray();
+            m.shiftArray(2);
+            m.insertAt(3);
             m.printArray();
 
         }
